@@ -11,6 +11,7 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 	font-family: 'Teko', sans-serif;
 	width:500px;
 	margin: 25px auto;
+	padding-top: 30px;
 	border: 1px solid rgba (255, 255, 255, .2);
 	background: #092f6e url(../img/vote-small.jpg) no-repeat center bottom;
 	min-height: 575px;
@@ -18,8 +19,8 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 
 #world-premiere .heading {
 	background-color: rgba(0, 0, 0, .5);
-	padding: 15px 0px 2px 0px;
-	margin: 0px 0 px 30px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 40px 0 px 30px 0px;
 }
 
 
@@ -30,7 +31,7 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 	font-weight:300;
 	line-height: 70px;
 	margin: 0px 0px 0px -5px;
-	padding-bottom: 0px;
+	padding-bottom: -2px;
 	text-align: center;
 }
 
@@ -42,7 +43,7 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 	font-weight: 700;
 	line-height: 18px;
 	margin-top: 0px;
-	padding: 0px;
+	padding-top: 5px;
 	text-align: center;
 	letter-spacing: 9px;
 }
@@ -54,19 +55,22 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 #world-premiere .my-countdown .countdown-section{
 	display: inline-block;
 	width: 95px;
-	margin-top: 20px
+	margin-top: 180px;
 }
+
 #world-premiere .my-countdown .countdown-amount{
 	display: block;
 	color: #ffffff;
-	font-size: 5.6em;
+	font-size: 4.6em;
 	line-height: 55px;
+	color:#051837;
 }
 #world-premiere .my-countdown .countdown-period{
 	color: #6fb5f8; 
 	font-size: 1.4em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	color: #1366ec;
 }
 
 @media screen and (max-width: 525px){
