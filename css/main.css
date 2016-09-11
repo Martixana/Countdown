@@ -3,7 +3,13 @@
 
 
 
-body { margin: 0; padding: 0; background-color:#403f40; color: #fff; font-family:"Teko", sans-serif; }
+body { 
+	margin: 0; 
+	padding: 0; 
+	background-color:#403f40; 
+	color: #fff; 
+	font-family:"Teko", sans-serif; 
+}
 
 /*Constructing flexboxes to form 3 columns. Main container as wrapper*/
 #main-container{
@@ -12,7 +18,7 @@ background-color: #092f6e
  margin: 0px;
  padding:0px;
  display: flex;
- flex-flow: row;
+ flex-direction: row;
 }
 
 /*Column 1*/
@@ -35,7 +41,7 @@ background-color: #092f6e
 }
 
 /*Column 2*/
-#world-premiere{
+#election-Countdown{
 	font-size:16px;
 	font-family: 'Teko', sans-serif;
 	width:500px;
@@ -48,14 +54,13 @@ background-color: #092f6e
     order: 2;
 }
 
-#world-premiere .heading {
+#election-Countdown .heading {
 	background-color: #403f40;
 	padding: 0px 0px 0px 0px;
 	margin: 40px 0 px 30px 0px;
 }
 
-
-#world-premiere h1{
+ #election-Countdown h1{
 	font-size: 4.2em;
 	color: ffffff;
 	text-transform: uppercase;
@@ -66,8 +71,7 @@ background-color: #092f6e
 	text-align: center;
 }
 
-
-#world-premiere h2 {
+#election-Countdown h2 {
 	font-size: 1.5em;
 	color: #6fb5f8;
 	text-transform: uppercase;
@@ -80,24 +84,24 @@ background-color: #092f6e
 	text-decoration: underline;
 }
 
-#world-premiere .my-countdown .countdown-row {
+#election-Countdown .my-countdown .countdown-row {
 	display: block;
 	text-align: center;
 }
-#world-premiere .my-countdown .countdown-section{
+#election-Countdown .my-countdown .countdown-section{
 	display: inline-block;
 	width: 95px;
 	margin-top: 180px;
 }
 
-#world-premiere .my-countdown .countdown-amount{
+#election-Countdown .my-countdown .countdown-amount{
 	display: block;
 	color: #ffffff;
 	font-size: 4.6em;
 	line-height: 55px;
 	color:#051837;
 }
-#world-premiere .my-countdown .countdown-period{
+#election-Countdown .my-countdown .countdown-period{
 	color: #6fb5f8; 
 	font-size: 1.4em;
 	text-transform: uppercase;
@@ -114,37 +118,60 @@ background-color: #092f6e
     }
 
 
-@media screen and (max-width: 525px){
+@media screen and (max-width: 780px){
 
-	#world-premiere{
-		font-size: 12px;
-		width: 300px;
-		min-height: 465px;
-		background: #092f6e url(../img/vote-small.jpg) no-repeat center;
-		background-size: 400px auto;
+	#main-container{
+		flex-direction: column;
 	}
-	#world-premiere .heading {
-		padding: 12px 0px 24px 0px;
-		margin-bottom: 20px;
+
+	/*Column 1*/
+ 	#navigation{
+    margin: 70px 0px 0px 0px;
+    text-align: center;
+}
+	#timeOfDay{
+	font-size: 1.8em;
+	font-weight: lighter;
+	margin: 0px 10px 50px 10px;
+	border: 5px solid #6fb5f8;
+	border-radius: 5px;
+
 	}
-	#world-premiere h1 {
+	#electionsFeed{
+	margin-left: 0px;
+	padding-bottom: 50px;
+}
+	#election-Countdown{
+	font-size: 12px;
+	width: 300px;
+	min-height: 465px;
+	background: #092f6e url(../img/vote-small.jpg) no-repeat center;
+	background-size: 400px auto;
+	}
+	#election-Countdown .heading {
+	padding: 12px 0px 24px 0px;
+	margin-bottom: 20px;
+	}
+	#election-Countdown h1 {
 		line-height: 40px;
 		font-size: 3.7em;
 	}
-	#world-premiere h2 {
-		line-height: 22px;
-		letter-spacing:  5px;
+	#election-Countdown h2 {
+		font-size: 2em;
+		line-height: 50px;
+		letter-spacing: 5px;
 	}
-	#world-premiere .my-countdown .countdown-section{
+	#election-Countdown .my-countdown .countdown-section{
 		width: 68px;
 		padding-top: 15px;
 	}
-	#world-premiere .my-countdown .countdown-amount{
+	#election-Countdown .my-countdown .countdown-amount{
 	color: #ffffff;
 	}
-	#world-premiere .my-countdown .countdown-period{
+	#election-Countdown .my-countdown .countdown-period{
 	color: #6fb5f8; 	
 	}
+
 }
 
 
