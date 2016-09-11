@@ -7,15 +7,16 @@
 		 <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Teko:300,700">
 	</head>
+	
+
 	<body>
 		<!--Container element for flexbox-->
 		<div id="main-container">
 
 		<!--Left column element, called 'Navigation'-->
-
 			<div id="navigation">
 
-				<div id="timeOfDay"></div>
+				<div class="column-title" id="timeOfDay"></div>
 
 				<div id="electionsFeed">
 			<!-- start sw-rss-feed code --> 
@@ -23,7 +24,7 @@
 				<!-- 
 				rssfeed_url = new Array(); 
 				rssfeed_url[0]="https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&topic=el&output=rss";  
-				rssfeed_frame_width="170"; 
+				rssfeed_frame_width="180"; 
 				rssfeed_frame_height="250"; 
 				rssfeed_scroll="on"; 
 				rssfeed_scroll_step="6"; 
@@ -72,8 +73,30 @@
 				</div>
 			<div class="my-countdown"></div>
 			</div>
+
 			<!--Right Column element, called 'Aside'-->
-			<div id="aside"></div>
+			<div id="aside">
+				<div class="column-title">
+					November 8th General Elections in California
+				</div>
+				<div>
+				<ul>
+					<li>
+						<a href="http://www.sos.ca.gov/elections/voter-registration/" target="_blank">Register to VOTE!</a>
+					</li>
+					<li>
+						<a href="http://voterguide.sos.ca.gov/" target="_blank">Offical Voter Information Guide</a>
+					</li>
+					<li>
+						<a href="http://elections.cdn.sos.ca.gov//statewide-elections/2016-general/november2016-certified-list-of-candidates.pdf" target="_blank">List Of Candidates</a>
+					</li>
+					<li>
+						<a href="http://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures/" target="_blank">California Statewide Ballot Measures</a>
+					</li>
+					
+				</ul>
+				</div>
+			</div>
 		</div>
 
 

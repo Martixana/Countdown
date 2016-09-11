@@ -1,3 +1,8 @@
+
+
+
+
+
 /*  CSS Document                             */
 
 
@@ -29,7 +34,7 @@ background-color: #092f6e
     flex: 1 6 20%;
     order: 1;
 }
-#timeOfDay{
+.column-title{
 	text-align: center;
 	color: #6FB5F8;
 	font-size: 1.3em;
@@ -110,12 +115,21 @@ background-color: #092f6e
 }
 
 /*Column 3*/
- #main-container > #aside {
-    /*border: 1px solid #8888bb;
-    border-radius: 7pt;*/
+ #aside {
+ 	margin: 130px 18px 0px 18px;
     flex: 1 6 20%;
     order: 3;
     }
+
+ #aside >div>ul>li>a{
+ 	color: #fff;
+ 	text-decoration: none;
+ 	letter-spacing: 2px;
+ }
+
+ #aside>div>ul{
+ 	margin-top: 50px;
+ }
 
 
 @media screen and (max-width: 780px){
@@ -171,8 +185,44 @@ background-color: #092f6e
 	#election-Countdown .my-countdown .countdown-period{
 	color: #6fb5f8; 	
 	}
-
+	#aside {
+    margin-top: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
